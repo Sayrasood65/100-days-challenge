@@ -1,0 +1,22 @@
+16) Write a program to input three numbers and find the largest among them using if–else.
+
+#include <stdio.h>
+
+int main() {
+    int a = 5;
+    int b = 20;
+    int c = 55;
+    if(a >b && a >c)
+    {
+    printf(" a is the largest no\n");
+    }
+    else if (b > c && b > a)
+    {
+        printf(" b is the largest no\n");
+    }
+    else
+    {
+        printf("c is the largest no\n");
+    }
+    return 0;
+}
