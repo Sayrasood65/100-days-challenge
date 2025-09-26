@@ -1,0 +1,47 @@
+25) Write a program to implement a basic calculator using switch-case for +, -, *, /, %.
+#include <stdio.h>
+
+int main() {
+    // Write C code here
+    int num1, num2;
+    char op;
+    
+    printf("enter first num: ");
+    scanf("%d", &num1);
+    printf("enter your op: ");
+    scanf(" %c", &op);
+    printf("enter second num: ");
+    scanf("%d", &num2);
+    
+    switch (op) {
+        case '+':
+        printf("result: %d\n", num1 + num2);
+        break;
+        
+        case '-':
+        printf("result: %d\n", num1 - num2);
+        break;
+        
+        case '*':
+        printf("result: %d\n", num1 * num2);
+        break;
+        
+        case '/':
+        if (num2 != 0)
+        printf("result: %d\n", num1 / num2);
+        else
+        printf("invalid");
+        break;
+        
+        case '%':
+        if (num2 != 0)
+        printf("result: %d\n", num1 % num2);
+        else 
+        printf("invalid");
+        break;
+        default:
+        printf("INVALID");
+    }
+
+    return 0;
+}
